@@ -1,0 +1,1173 @@
+{
+    "require": [
+        [
+            "ScheduledServerJS",
+            "handle",
+            null,
+            [
+                {
+                    "__bbox": {
+                        "require": [
+                            [
+                                "emptyFunction",
+                                "thatReturns",
+                                [
+                                    "RequireDeferredReference"
+                                ],
+                                [
+                                    [
+                                        {
+                                            "__dr": "useVideoPlayerShakaPerformanceLoggerRelayImpl_init$normalization.graphql"
+                                        },
+                                        {
+                                            "__dr": "VideoPlayerShakaPerformanceLogger"
+                                        },
+                                        {
+                                            "__dr": "useVideoPlayerShakaPerformanceLoggerBuilder_init$normalization.graphql"
+                                        },
+                                        {
+                                            "__dr": "VideoPlayerShakaPerformanceLoggerBuilder"
+                                        }
+                                    ]
+                                ]
+                            ],
+                            [
+                                "RelayPrefetchedStreamCache",
+                                "next",
+                                [],
+                                [
+                                    "adp_FBReelsRootWithEntrypointQueryRelayPreloader_65454388695d59050129614",
+                                    {
+                                        "__bbox": {
+                                            "complete": false,
+                                            "result": {
+                                                "label": "FBReelsMediaTransitionContainer_initial_reels$defer$ReelsInteractivePluginManagerDeferred_video",
+                                                "path": [
+                                                    "video",
+                                                    "creation_story",
+                                                    "short_form_video_context",
+                                                    "video"
+                                                ],
+                                                "data": {
+                                                    "if_eligible_for_interactive_plugin_execution": null
+                                                },
+                                                "extensions": {
+                                                    "prefetch_uris_v2": [
+                                                        {
+                                                            "uri": "https:\/\/scontent.fdel24-1.fna.fbcdn.net\/v\/t39.30808-1\/335430160_2633644863453783_2638427470110689543_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=i-INv81bfGcAX9ZRsRu&_nc_ht=scontent.fdel24-1.fna&oh=00_AfBXGteuJRLBgndW6Wsbhoz0TaDWcNyNSYxpCudGmjsiBA&oe=654A2E28",
+                                                            "label": null
+                                                        }
+                                                    ],
+                                                    "all_video_dash_prefetch_representations": [
+                                                        {
+                                                            "representations": [
+                                                                {
+                                                                    "representation_id": "1412008829739187v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.01M.08",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/395453935_6789437311146712_8825081720279402547_n.mp4?_nc_cat=111&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTUwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=zV4mIG-LLkIAX9V2Axb&_nc_ht=video.fdel24-1.fna&oh=00_AfBnHCA5cat-RopLc5T7VZNM6E4N_RNNhaKqs6gXFPRrDA&oe=654A83D1",
+                                                                    "bandwidth": 148257,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:75.1,480:72,720:62.4,1080:45.8",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 89126
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1785331715254351v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.01M.08",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/391683716_357072543360930_7685453944965277792_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTQwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=tSiwRAIR0DwAX_u1YLd&_nc_ht=video.fdel24-1.fna&oh=00_AfAW8gD2mjfmCqJ1I3AwLk8SjvugnbnrHuppsvyaT1dD0Q&oe=65497FBA",
+                                                                    "bandwidth": 183375,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:75.8,480:72.9,720:63,1080:46.4",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 110506
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1379631352925282v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.04M.08",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/396477093_349045514301145_1601671581742777398_n.mp4?_nc_cat=104&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTYwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=cyQ_Zas3GaEAX8BMIJy&_nc_ht=video.fdel24-1.fna&oh=00_AfChll7bfOyy7daqZcmi__OJnxrLfOzHMvxPJRzNu8PXbg&oe=65495D48",
+                                                                    "bandwidth": 215697,
+                                                                    "height": 960,
+                                                                    "width": 540,
+                                                                    "playback_resolution_mos": "0:100,360:87.3,480:83.8,720:78.2,1080:61.6",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 128524
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1812098789232506v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.04M.08",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/397039422_1293971391321369_1063609356818547638_n.mp4?_nc_cat=108&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTcwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=3huAeovq8dQAX8-QmmQ&_nc_ht=video.fdel24-1.fna&oh=00_AfA5RyRZXs5f8oFZD_LTAdsz4uzS7l1g_qPDt6y_4JOnEA&oe=654B0B7C",
+                                                                    "bandwidth": 441868,
+                                                                    "height": 960,
+                                                                    "width": 540,
+                                                                    "playback_resolution_mos": "0:100,360:90.6,480:87.4,720:82.1,1080:64.1",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 263950
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1033972308027267v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.08M.08",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/396715668_1437961906781978_8450283764320436496_n.mp4?_nc_cat=101&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTgwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=w46OLWIUArMAX80KJ_5&_nc_ht=video.fdel24-1.fna&oh=00_AfDFmQaU776MbciXdX9o52KZiNPzEuizEO0D1meSd_2TYw&oe=654ADC8C",
+                                                                    "bandwidth": 1391948,
+                                                                    "height": 1920,
+                                                                    "width": 1080,
+                                                                    "playback_resolution_mos": "0:100,360:94.4,480:92.2,720:88.5,1080:77.2",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 853382
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "346222444431776v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.08M.08",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/395948183_1401123147495741_7227156330458053274_n.mp4?_nc_cat=103&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTkwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=VjBQXIKYqTkAX_oz9W5&_nc_ht=video.fdel24-1.fna&oh=00_AfC4wXFzNkSfunjn51hz8qk13v1VMHZkbLXUx2Su03JzAg&oe=65495718",
+                                                                    "bandwidth": 2266935,
+                                                                    "height": 1920,
+                                                                    "width": 1080,
+                                                                    "playback_resolution_mos": "0:100,360:95.8,480:93.9,720:90.7,1080:80.4",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 1401649
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "335869625687510a",
+                                                                    "mime_type": "audio\/mp4",
+                                                                    "codecs": "mp4a.40.5",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/396008766_1489830188432213_1564636286678833010_n.mp4?_nc_cat=105&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfYXVkaW9fYWFjcF82NF9mbm9ybTE0X2ZyYWdfMl9hdWRpbyJ9&_nc_ohc=wZKvsSIL0t8AX8kAThN&_nc_ht=video.fdel24-1.fna&oh=00_AfAxmkwrWOF56o6jaOC2az1pVbcXHRw5a4eUj08-U3NtGw&oe=654954B4",
+                                                                    "bandwidth": 66576,
+                                                                    "height": 0,
+                                                                    "width": 0,
+                                                                    "playback_resolution_mos": "",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 816
+                                                                        },
+                                                                        {
+                                                                            "start": 817,
+                                                                            "end": 908
+                                                                        },
+                                                                        {
+                                                                            "start": 909,
+                                                                            "end": 18763
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "video_id": 725308459618999
+                                                        },
+                                                        {
+                                                            "representations": [
+                                                                {
+                                                                    "representation_id": "1276705676205801v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "vp09.00.21.08.00.05.06.05.00",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398796187_712233667088211_1534188621280203909_n.mp4?_nc_cat=108&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfdnA5X2dlbjFhdmNfcTUwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=Q_YHPMXkdc8AX-irllI&_nc_oc=AQmFwa4-k7qGLdBtT5WfQDGZap9w-WC-Hsr8tHLR-Z3CLG2IFOEgj0aeDO8PiXLfn1M&_nc_ht=video.fdel24-1.fna&oh=00_AfDIKHcXGRLmFinvP-5Jz0SNaRaSZdN72qAAXmIWfH1phQ&oe=65497648",
+                                                                    "bandwidth": 215383,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:75.6,480:65.2,720:53.9,1080:37.6",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 791
+                                                                        },
+                                                                        {
+                                                                            "start": 792,
+                                                                            "end": 847
+                                                                        },
+                                                                        {
+                                                                            "start": 848,
+                                                                            "end": 122615
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "2328907694166514v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "vp09.00.20.08.00.05.06.05.00",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398663534_3525987764281191_1916207173506255494_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfdnA5X2dlbjFhdmNfcTQwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=BCllYQOeNLEAX89lf_8&_nc_ht=video.fdel24-1.fna&oh=00_AfCKwJDtCYy0vhtNL_mi4_N46zYB92LuQxlfjzHqhwYEpg&oe=6549456F",
+                                                                    "bandwidth": 97008,
+                                                                    "height": 384,
+                                                                    "width": 216,
+                                                                    "playback_resolution_mos": "0:100,360:40.6,480:31.3,720:24,1080:18.4",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 791
+                                                                        },
+                                                                        {
+                                                                            "start": 792,
+                                                                            "end": 847
+                                                                        },
+                                                                        {
+                                                                            "start": 848,
+                                                                            "end": 55363
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "852413659708758v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "vp09.00.20.08.00.05.06.05.00",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/397997615_1030660488137328_2201087738364772025_n.mp4?_nc_cat=106&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfdnA5X2dlbjFhdmNfcTMwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=gzVda-Ur0d4AX-w0g4r&_nc_ht=video.fdel24-1.fna&oh=00_AfASy_8ut3GebM0r7XWYKiVFrFfCovku_KXcw9V2Ye_0jg&oe=654AA534",
+                                                                    "bandwidth": 107258,
+                                                                    "height": 384,
+                                                                    "width": 216,
+                                                                    "playback_resolution_mos": "0:100,360:41.1,480:31.6,720:24.4,1080:18.6",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 791
+                                                                        },
+                                                                        {
+                                                                            "start": 792,
+                                                                            "end": 847
+                                                                        },
+                                                                        {
+                                                                            "start": 848,
+                                                                            "end": 61237
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1395895237943740v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "vp09.00.21.08.00.05.06.05.00",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/399171163_224658980634870_4754319364351361477_n.mp4?_nc_cat=111&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfdnA5X2dlbjFhdmNfcTYwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=OrfGhr-j6MMAX8eFybw&_nc_ht=video.fdel24-1.fna&oh=00_AfAH7IeLkOOYzCtJL-iPBYSvIdvMLYZoGVxQlp1KH_Cs0w&oe=654A2F9C",
+                                                                    "bandwidth": 243182,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:77.3,480:66.9,720:55.3,1080:38.7",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 791
+                                                                        },
+                                                                        {
+                                                                            "start": 792,
+                                                                            "end": 847
+                                                                        },
+                                                                        {
+                                                                            "start": 848,
+                                                                            "end": 138986
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "244439145285365v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "vp09.00.30.08.00.05.06.05.00",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398700654_997901984775368_6996915032665173685_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfdnA5X2dlbjFhdmNfcTcwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=RzRCbY9yvf0AX_sjnft&_nc_ht=video.fdel24-1.fna&oh=00_AfDbhuYIZAIev-sli72ZCagT0Vi8SD3v88ON3aweX7WE-Q&oe=654AD6BF",
+                                                                    "bandwidth": 474810,
+                                                                    "height": 960,
+                                                                    "width": 540,
+                                                                    "playback_resolution_mos": "0:100,360:87.2,480:83.1,720:75.9,1080:55.8",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 791
+                                                                        },
+                                                                        {
+                                                                            "start": 792,
+                                                                            "end": 847
+                                                                        },
+                                                                        {
+                                                                            "start": 848,
+                                                                            "end": 278050
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "299492639653073v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "vp09.00.31.08.00.05.06.05.00",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/399166737_305827978908910_6451982040035420897_n.mp4?_nc_cat=109&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfdnA5X2dlbjFhdmNfcTgwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=-7HlAarNIfMAX-K2Ulj&_nc_ht=video.fdel24-1.fna&oh=00_AfB9bUVsWsjqrXNHGJwNGzax6BPDuo28iDStPOLunYk_Kw&oe=6549F3B8",
+                                                                    "bandwidth": 952970,
+                                                                    "height": 1280,
+                                                                    "width": 720,
+                                                                    "playback_resolution_mos": "0:100,360:90.4,480:87.9,720:79.7,1080:64.2",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 791
+                                                                        },
+                                                                        {
+                                                                            "start": 792,
+                                                                            "end": 847
+                                                                        },
+                                                                        {
+                                                                            "start": 848,
+                                                                            "end": 571690
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "247303185005917v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "vp09.00.40.08.00.05.06.05.00",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398713311_871510654378233_8016327007219488876_n.mp4?_nc_cat=111&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfdnA5X2dlbjFhdmNfcTkwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=SLsTEmh1jpUAX_n5Hh_&_nc_oc=AQlcGh0B8S2yM5T29Fd1fZ9_88_OUe2QKp4Nf-wjodEiKIcF45-HpA6EgRm_apfvOFw&_nc_ht=video.fdel24-1.fna&oh=00_AfCBJkjuwGuFjEIhnYdMYXtPcwOFYDZYbQCfSxMG7UnF-w&oe=654A4B92",
+                                                                    "bandwidth": 2052943,
+                                                                    "height": 1920,
+                                                                    "width": 1080,
+                                                                    "playback_resolution_mos": "0:100,360:93.1,480:90.8,720:86.3,1080:73.9",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 791
+                                                                        },
+                                                                        {
+                                                                            "start": 792,
+                                                                            "end": 847
+                                                                        },
+                                                                        {
+                                                                            "start": 848,
+                                                                            "end": 1244202
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "297084769456954a",
+                                                                    "mime_type": "audio\/mp4",
+                                                                    "codecs": "mp4a.40.5",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/396981851_690089689752276_4917798673513736692_n.mp4?_nc_cat=110&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfYXVkaW9fYWFjcF82NF9mbm9ybTE0X2ZyYWdfMl9hdWRpbyJ9&_nc_ohc=SB2aM7zLQhMAX9jz-by&_nc_ht=video.fdel24-1.fna&oh=00_AfDHwkvoeuOTwzXhVySTeMyRuOY2DrYdjplGdqBP34rCwg&oe=654A4EE9",
+                                                                    "bandwidth": 66521,
+                                                                    "height": 0,
+                                                                    "width": 0,
+                                                                    "playback_resolution_mos": "",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 816
+                                                                        },
+                                                                        {
+                                                                            "start": 817,
+                                                                            "end": 908
+                                                                        },
+                                                                        {
+                                                                            "start": 909,
+                                                                            "end": 18823
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "video_id": 292801216989320
+                                                        },
+                                                        {
+                                                            "representations": [
+                                                                {
+                                                                    "representation_id": "1047017576488865v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.01M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/397983221_1043982820062456_52404272065683638_n.mp4?_nc_cat=104&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTUwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=oV1fZOvr0eIAX889aKC&_nc_ht=video.fdel24-1.fna&oh=00_AfD5FqJsHYwBztGmAg47CUeM-8bjVA-3-01bv2IsQ9RsJw&oe=654B314C",
+                                                                    "bandwidth": 130268,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:74.1,480:71.4,720:61.3,1080:43.8",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 73237
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "377262921519817v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.00M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398693081_207090292416577_1770396283930402903_n.mp4?_nc_cat=104&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTQwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=NiI6Y9UOdGMAX9PK47W&_nc_ht=video.fdel24-1.fna&oh=00_AfBG2qDOQysgQk3WLRbZNRnmujY0TqLC9EsVeS_1ZpF1HQ&oe=654A2AD3",
+                                                                    "bandwidth": 82132,
+                                                                    "height": 384,
+                                                                    "width": 216,
+                                                                    "playback_resolution_mos": "0:100,360:44.1,480:34.6,720:27.4,1080:20.2",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 46647
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1505774986923793v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.01M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398799122_356477586777702_7396228791552928085_n.mp4?_nc_cat=109&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTYwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=-xCo18oUul8AX95aYeC&_nc_ht=video.fdel24-1.fna&oh=00_AfASNSO4jKTWy3sZh_segmofWcwbmizOtS1mLllAYJzy2A&oe=6549A4DD",
+                                                                    "bandwidth": 239285,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:77,480:74.3,720:63.8,1080:45.8",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 139262
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "2145929625829918v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.04M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398731979_889675125880975_777760548437488183_n.mp4?_nc_cat=111&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTcwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=qBJfD5pNnYsAX82xSWY&_nc_ht=video.fdel24-1.fna&oh=00_AfAMM3zJIwxyg5NvXNliWNzXZPn0vXfEJYj0FeZe8Gzl6w&oe=65497AC3",
+                                                                    "bandwidth": 293613,
+                                                                    "height": 960,
+                                                                    "width": 540,
+                                                                    "playback_resolution_mos": "0:100,360:91.4,480:87.4,720:81.1,1080:61.8",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 168749
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "710658344291846v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.05M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398483031_723721359792148_7578536677461698014_n.mp4?_nc_cat=107&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTgwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=9tJujReIwkwAX8yehvC&_nc_ht=video.fdel24-1.fna&oh=00_AfBhqs2hM9Qskty-5t3fqR0Zxw-rEojibrtP2ftBLD7Dow&oe=654A476C",
+                                                                    "bandwidth": 831494,
+                                                                    "height": 1280,
+                                                                    "width": 720,
+                                                                    "playback_resolution_mos": "0:100,360:94.1,480:92.2,720:83.3,1080:69.4",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 501594
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "720941946756546v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.08M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/396732197_1051334996006471_1211164558592568444_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTkwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=dOOU-hKv8IUAX-UWWc7&_nc_ht=video.fdel24-1.fna&oh=00_AfAfohuxoU-gUMSg82wqnQdDP3OChfFTMts4Lu8k1aNr1g&oe=654A482A",
+                                                                    "bandwidth": 2270597,
+                                                                    "height": 1920,
+                                                                    "width": 1080,
+                                                                    "playback_resolution_mos": "0:100,360:96.9,480:95.7,720:92.7,1080:81.8",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 1400500
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1069860494445806a",
+                                                                    "mime_type": "audio\/mp4",
+                                                                    "codecs": "mp4a.40.5",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398392863_856847689441611_7375063971476735017_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfYXVkaW9fYWFjcF82NF9mbm9ybTE0X2ZyYWdfMl9hdWRpbyJ9&_nc_ohc=qLfj5w-42uYAX96BHvp&_nc_ht=video.fdel24-1.fna&oh=00_AfABlWc29R-TbjreJBqrMm-QOTeXyG8DGwHnwYb02P7P_w&oe=654AAC64",
+                                                                    "bandwidth": 66521,
+                                                                    "height": 0,
+                                                                    "width": 0,
+                                                                    "playback_resolution_mos": "",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 816
+                                                                        },
+                                                                        {
+                                                                            "start": 817,
+                                                                            "end": 908
+                                                                        },
+                                                                        {
+                                                                            "start": 909,
+                                                                            "end": 18823
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "video_id": 300112322901695
+                                                        },
+                                                        {
+                                                            "representations": [
+                                                                {
+                                                                    "representation_id": "2660917337408165v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.01M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398673216_706484714736731_7536166981454498230_n.mp4?_nc_cat=108&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTUwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=YGB48jY3bxAAX8X7WI3&_nc_oc=AQk2ENbDTVXmdP0b8nVWl0FOvsdVEE7Q0McemGJ-sPTNtjtNrs259-gHH8sOfMlnJQw&_nc_ht=video.fdel24-1.fna&oh=00_AfCGOp7wLsH8jg5aLh9oxwghpQKkF1bqVKR0mmcXN4Gjxg&oe=6549E420",
+                                                                    "bandwidth": 129702,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:75.1,480:74.3,720:64.9,1080:48.2",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 72755
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "179291811917575v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.00M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398107237_326983496622499_8321530808909176176_n.mp4?_nc_cat=102&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTQwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=fxTO4Sd-2ycAX8934EG&_nc_ht=video.fdel24-1.fna&oh=00_AfBBhODcWghLJZk2MqP4JyXyKbL555-v1cLmreZUVAHeNg&oe=654A4910",
+                                                                    "bandwidth": 141945,
+                                                                    "height": 512,
+                                                                    "width": 288,
+                                                                    "playback_resolution_mos": "0:100,360:71.1,480:61.3,720:51.5,1080:36.6",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 79849
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "202798826182477v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.01M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398292554_1059412055104889_7501676788502334871_n.mp4?_nc_cat=101&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTYwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=8s2h4xiGfsUAX-S6c0a&_nc_ht=video.fdel24-1.fna&oh=00_AfCMcZN5eztHO7hjLGpRD2ujOALhiDQ_a14YycjOj5LIPA&oe=654A4FD4",
+                                                                    "bandwidth": 237076,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:78.2,480:77.1,720:67.8,1080:50.7",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 138371
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1021683082446279v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.04M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398703084_893220398827664_4277081338100414865_n.mp4?_nc_cat=105&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTcwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=AfLoTWFR0lQAX-JW-N3&_nc_ht=video.fdel24-1.fna&oh=00_AfCIEsWvGLsOEw0qawUNMtYkVfZ_Oj0rDoBNdZz5FI0Dew&oe=6549409F",
+                                                                    "bandwidth": 329119,
+                                                                    "height": 960,
+                                                                    "width": 540,
+                                                                    "playback_resolution_mos": "0:100,360:92.3,480:88.9,720:83.9,1080:65.5",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 193257
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "722052579298151v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.08M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398678938_3332674460357631_8964179839937059886_n.mp4?_nc_cat=108&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTgwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=01PTEPwBR0wAX_fwh3S&_nc_ht=video.fdel24-1.fna&oh=00_AfASUuFQbPPqdvn0aJxsLoR1eqIv5Acfc4e4akpU9KfIlA&oe=6549CB0B",
+                                                                    "bandwidth": 920466,
+                                                                    "height": 1600,
+                                                                    "width": 900,
+                                                                    "playback_resolution_mos": "0:100,360:95.4,480:93.8,720:90.2,1080:75.5",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 589762
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1744580712660259v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.08M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398556789_1035389237588273_9130072167606861228_n.mp4?_nc_cat=100&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTkwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=hj2gCfEUZbcAX9GykX9&_nc_ht=video.fdel24-1.fna&oh=00_AfDLoGUzmSXHj-v72A2KA4vWOCF1dBgbdCjseusnansb8A&oe=654943A4",
+                                                                    "bandwidth": 2217407,
+                                                                    "height": 1920,
+                                                                    "width": 1080,
+                                                                    "playback_resolution_mos": "0:100,360:97.3,480:96.3,720:93.9,1080:84.5",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 1490309
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "825976732608893a",
+                                                                    "mime_type": "audio\/mp4",
+                                                                    "codecs": "mp4a.40.5",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398650700_3490328591229666_9022836651091064960_n.mp4?_nc_cat=101&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfYXVkaW9fYWFjcF82NF9mbm9ybTE0X2ZyYWdfMl9hdWRpbyJ9&_nc_ohc=kyQHReGUozkAX-UMQXL&_nc_ht=video.fdel24-1.fna&oh=00_AfD-lQ9eRVUM_3jMyPfvVdS55VRw8A4bL9LgfJyclPBZZQ&oe=654AD477",
+                                                                    "bandwidth": 66658,
+                                                                    "height": 0,
+                                                                    "width": 0,
+                                                                    "playback_resolution_mos": "",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 816
+                                                                        },
+                                                                        {
+                                                                            "start": 817,
+                                                                            "end": 908
+                                                                        },
+                                                                        {
+                                                                            "start": 909,
+                                                                            "end": 18849
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "video_id": 679285244341294
+                                                        },
+                                                        {
+                                                            "representations": [
+                                                                {
+                                                                    "representation_id": "1002957827483331v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.01M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398956060_976821624104185_1764041689978171109_n.mp4?_nc_cat=110&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTUwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=BRadCxFhKgUAX-_uLe3&_nc_ht=video.fdel24-1.fna&oh=00_AfDI3BHpuyKk7lOm7eeOl7a8St1kQxF5RsgzLFOQApDdrg&oe=654A74ED",
+                                                                    "bandwidth": 125159,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:75,480:72.2,720:63.1,1080:45.2",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 71254
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "284928950533217v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.00M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398650418_874832677528407_3759544545858330151_n.mp4?_nc_cat=110&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTQwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=AwKDZRb-KAYAX_wn26k&_nc_ht=video.fdel24-1.fna&oh=00_AfDuH9gdfjn7GZu_SwlrMB7eZ0mhFCk_weTwwermsYVc2A&oe=65497B8B",
+                                                                    "bandwidth": 79940,
+                                                                    "height": 384,
+                                                                    "width": 216,
+                                                                    "playback_resolution_mos": "0:100,360:44.7,480:35.9,720:29,1080:21.4",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 45701
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1515588229273457v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.01M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/397989463_3440603452866116_4542555382284667391_n.mp4?_nc_cat=111&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTYwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=o74N6FClBNYAX8Ajf0p&_nc_ht=video.fdel24-1.fna&oh=00_AfCh6ZQSUflmSPTSSl7sdbsNZK8ilsE_jqGNS7OcNgAtvw&oe=6549950E",
+                                                                    "bandwidth": 228741,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:77,480:74.3,720:65.3,1080:47.4",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 134258
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "293974416886221v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.04M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398659881_887111126272105_5412569571146808969_n.mp4?_nc_cat=110&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTcwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=iOTo0E-uZysAX8zGBLx&_nc_ht=video.fdel24-1.fna&oh=00_AfAPo1p1mJH6fM22sT0YyBZ3kN3dKtbmLXBKOKw5LdQUCg&oe=654B2742",
+                                                                    "bandwidth": 329919,
+                                                                    "height": 960,
+                                                                    "width": 540,
+                                                                    "playback_resolution_mos": "0:100,360:92.3,480:88.3,720:83.2,1080:63.4",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 192983
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1420356358825076v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.08M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/399120249_3519369448312747_5172467747166006366_n.mp4?_nc_cat=101&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTgwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=IXd4wi7JROUAX-P2an7&_nc_ht=video.fdel24-1.fna&oh=00_AfAEwih7PHfv_pMlZN6J2KE2erzH8stJHjAiV8mMTGWo4Q&oe=654A33FF",
+                                                                    "bandwidth": 854965,
+                                                                    "height": 1920,
+                                                                    "width": 1080,
+                                                                    "playback_resolution_mos": "0:100,360:95.3,480:93.6,720:90,1080:77.6",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 516955
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "871166191183390v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.08M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398005109_163274986867055_5490695269552416085_n.mp4?_nc_cat=110&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTkwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=MqozcvaKu38AX_1kZlQ&_nc_ht=video.fdel24-1.fna&oh=00_AfBgVk9R8Sf5qiPCBbwOxSxX4xJWPb3X9jQJvW64RbiNew&oe=65494FE8",
+                                                                    "bandwidth": 2336087,
+                                                                    "height": 1920,
+                                                                    "width": 1080,
+                                                                    "playback_resolution_mos": "0:100,360:97.3,480:96.2,720:93.8,1080:84.1",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 1451836
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "323547240284817a",
+                                                                    "mime_type": "audio\/mp4",
+                                                                    "codecs": "mp4a.40.5",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/396916723_661310559319496_968735299055056410_n.mp4?_nc_cat=109&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfYXVkaW9fYWFjcF82NF9mbm9ybTE0X2ZyYWdfMl9hdWRpbyJ9&_nc_ohc=H7MY1t4aSEYAX_eQ3Tq&_nc_ht=video.fdel24-1.fna&oh=00_AfAt_a6EfaSDjvgaMFLabbfWM5XH21CboljZDGun1zgLYw&oe=654A5868",
+                                                                    "bandwidth": 66521,
+                                                                    "height": 0,
+                                                                    "width": 0,
+                                                                    "playback_resolution_mos": "",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 816
+                                                                        },
+                                                                        {
+                                                                            "start": 817,
+                                                                            "end": 908
+                                                                        },
+                                                                        {
+                                                                            "start": 909,
+                                                                            "end": 18823
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "video_id": 747385813896141
+                                                        },
+                                                        {
+                                                            "representations": [
+                                                                {
+                                                                    "representation_id": "638439711696408v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.01M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/399222423_1472070866968591_3351697208330309431_n.mp4?_nc_cat=110&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTUwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=YkxU7zwZtr8AX91PjWY&_nc_ht=video.fdel24-1.fna&oh=00_AfBrMiu-pEs3ROGmFV7CkUpPqRmSGG-tVLE-5Eqs_D_WXg&oe=654A2CAC",
+                                                                    "bandwidth": 102252,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:82.5,480:81.8,720:74.6,1080:59.6",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 58013
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1768933843568106v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.00M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398160623_882658659585622_7279169677234563868_n.mp4?_nc_cat=105&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTQwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=eofFnGk6cygAX9B9eGK&_nc_ht=video.fdel24-1.fna&oh=00_AfBewpDw_o0Ssu7Qd2Psdi7EiXS_OtGIeK4Jw7PfFusJlQ&oe=654A37C7",
+                                                                    "bandwidth": 113722,
+                                                                    "height": 512,
+                                                                    "width": 288,
+                                                                    "playback_resolution_mos": "0:100,360:78.8,480:71.8,720:64.6,1080:49.9",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 66303
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "770300001568937v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.01M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398667475_1422189271975498_2326809784785056342_n.mp4?_nc_cat=109&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTYwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=YsMBC8c0dTMAX87D7qo&_nc_ht=video.fdel24-1.fna&oh=00_AfDnZ9hVllcBS3Ple4qqlr7vKMyEA9llRjIrR0P_EwhqzQ&oe=654AEF87",
+                                                                    "bandwidth": 188298,
+                                                                    "height": 640,
+                                                                    "width": 360,
+                                                                    "playback_resolution_mos": "0:100,360:84.8,480:84.3,720:76.5,1080:61.6",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 109913
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "300361662930266v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.04M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398304448_708508047493312_177845891657229214_n.mp4?_nc_cat=105&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTcwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=MqxpCLs0L2MAX-pmF_s&_nc_ht=video.fdel24-1.fna&oh=00_AfDXNLASxxIjfOEfF6RbBLZdekBlhR5PLxhpD2n2r62yCA&oe=654A1E43",
+                                                                    "bandwidth": 257885,
+                                                                    "height": 960,
+                                                                    "width": 540,
+                                                                    "playback_resolution_mos": "0:100,360:94.4,480:91.8,720:88.4,1080:72.1",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 150269
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "794667015794257v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.05M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398687663_733078242021607_5102840112172301279_n.mp4?_nc_cat=108&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTgwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=3rVf5CCV8poAX_eUQUg&_nc_ht=video.fdel24-1.fna&oh=00_AfDFndWI4L9k84LBmO_OyYHE5TLe5Z3wIVIbW5twhNdMvQ&oe=654AF1B2",
+                                                                    "bandwidth": 536592,
+                                                                    "height": 1280,
+                                                                    "width": 720,
+                                                                    "playback_resolution_mos": "0:100,360:95.7,480:94.7,720:88.9,1080:77.2",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 317881
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "1451917388706214v",
+                                                                    "mime_type": "video\/mp4",
+                                                                    "codecs": "av01.0.08M.08.0.111.05.06.05.0",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398565748_1041665257145475_1868241964988341588_n.mp4?_nc_cat=105&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfcjJfYXYxX2dlbjFhdmNfbGNfcTkwX2ZyYWdfMl92aWRlbyJ9&_nc_ohc=MSexRMalnrwAX9UjzxZ&_nc_ht=video.fdel24-1.fna&oh=00_AfBsKjx8aQzhvrKGgvCy7OzWwQ2aTdgBEH1e4YdGuJRVtQ&oe=654A2B3C",
+                                                                    "bandwidth": 1075061,
+                                                                    "height": 1920,
+                                                                    "width": 1080,
+                                                                    "playback_resolution_mos": "0:100,360:97.6,480:96.7,720:95.1,1080:87.6",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 799
+                                                                        },
+                                                                        {
+                                                                            "start": 800,
+                                                                            "end": 855
+                                                                        },
+                                                                        {
+                                                                            "start": 856,
+                                                                            "end": 653134
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "representation_id": "306320992296543a",
+                                                                    "mime_type": "audio\/mp4",
+                                                                    "codecs": "mp4a.40.5",
+                                                                    "base_url": "https:\/\/video.fdel24-1.fna.fbcdn.net\/v\/t39.25447-2\/398147705_642676231403284_1510835018807533601_n.mp4?_nc_cat=104&ccb=1-7&_nc_sid=9a5d50&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfYXVkaW9fYWFjcF82NF9mbm9ybTE0X2ZyYWdfMl9hdWRpbyJ9&_nc_ohc=zRpuN_IoKIMAX8Ogz5d&_nc_ht=video.fdel24-1.fna&oh=00_AfA9_sIOpcaGf2ALVwIk7z59VI1xn3y5FOPHSh4Dyku1iw&oe=6549A2F2",
+                                                                    "bandwidth": 66252,
+                                                                    "height": 0,
+                                                                    "width": 0,
+                                                                    "playback_resolution_mos": "",
+                                                                    "segments": [
+                                                                        {
+                                                                            "start": 0,
+                                                                            "end": 816
+                                                                        },
+                                                                        {
+                                                                            "start": 817,
+                                                                            "end": 908
+                                                                        },
+                                                                        {
+                                                                            "start": 909,
+                                                                            "end": 18798
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "video_id": 720816733406419
+                                                        }
+                                                    ],
+                                                    "is_final": false
+                                                }
+                                            },
+                                            "sequence_number": 1
+                                        }
+                                    }
+                                ]
+                            ],
+                            [
+                                "RequireDeferredReference",
+                                "unblock",
+                                [],
+                                [
+                                    [
+                                        "useVideoPlayerShakaPerformanceLoggerRelayImpl_init$normalization.graphql",
+                                        "VideoPlayerShakaPerformanceLogger",
+                                        "useVideoPlayerShakaPerformanceLoggerBuilder_init$normalization.graphql",
+                                        "VideoPlayerShakaPerformanceLoggerBuilder"
+                                    ],
+                                    "sd"
+                                ]
+                            ],
+                            [
+                                "RequireDeferredReference",
+                                "unblock",
+                                [],
+                                [
+                                    [
+                                        "useVideoPlayerShakaPerformanceLoggerRelayImpl_init$normalization.graphql",
+                                        "VideoPlayerShakaPerformanceLogger",
+                                        "useVideoPlayerShakaPerformanceLoggerBuilder_init$normalization.graphql",
+                                        "VideoPlayerShakaPerformanceLoggerBuilder"
+                                    ],
+                                    "css"
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "__bbox": null
+                },
+                {
+                    "__bbox": null
+                }
+            ]
+        ]
+    ]
+}

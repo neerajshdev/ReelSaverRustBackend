@@ -1,6 +1,15 @@
-use crate::fb_url_extractor::{extract_json_from_fb_doc, fetch_fb_html, find_json};
-use actix_web::{get, web, HttpResponse, Responder, Result};
+use std::result;
+
+use crate::{
+    fb_url_extractor::{
+        extract_json_from_fb_doc, fetch_fb_html, find_json, is_facebook_video_or_reel_url,
+        scrap_facebook_video,
+    },
+    instagram::is_instagram_reel_or_video_url,
+};
+use actix_web::{get, web, HttpResponse, Responder};
 use serde::{Deserialize, Serialize};
+use serde_json::Value;
 
 #[derive(Serialize)]
 pub struct VideoResult {
@@ -16,20 +25,59 @@ pub struct Info {
 
 #[get("/")]
 pub async fn hello() -> impl Responder {
+    println!("greeting..");
     HttpResponse::Ok().body("Hello, world!")
 }
 
 #[get("/get-video-data")]
 pub async fn get_video_data(info: web::Json<Info>) -> impl Responder {
-
     let video_url = info.video_url.to_owned();
-    
 
-    let result = VideoResult {
-        result : "ok".to_string(),
-        thumbnail_url: "https://scontent.fdel24-1.fna.fbcdn.net/v/t51.29350-10/395705143_789011319648033_5016290835188045552_n.jpg?stp=dst-jpg_s960x960&_nc_cat=1&ccb=1-7&_nc_sid=dd673f&_nc_ohc=YluSeDdO4jwAX_WD5A2&_nc_ht=scontent.fdel24-1.fna&oh=00_AfBpxgWq5eEbX4_7T9JluvblQg2t6Hbn7J2cYV9neLu0cw&oe=65424757".to_string(), 
-        video_url : "https://scontent.fdel24-1.fna.fbcdn.net/v/t50.33967-16/395013136_174947445611391_4152204066801686275_n.mp4?_nc_cat=105&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjg2NCwicmxhIjo1MzAsInZlbmNvZGVfdGFnIjoiYXNpY19ocTFfc2RfcHJvZ3Jlc3NpdmUifQ%3D%3D&_nc_ohc=uCyP1IRjcyUAX-6C2UR&_nc_ht=scontent.fdel24-1.fna&oh=00_AfDYidZ_GJw5Tdni_diX7Ewm0JjNLlLxj2uhMt9E0nkNEg&oe=65425949".to_string()
+    let some: Option<VideoResult> = if let Some(id) = is_facebook_video_or_reel_url(&video_url) {
+        // println!("given url {} is facebook url with id {}", &video_url, &id);
+
+        if let Some(video_data) = scrap_facebook_video(&video_url, &id).await {
+            println!("{:?}", serde_json::to_string_pretty(&video_data));
+
+            let hd_url = video_data
+                .get("browser_native_hd_url")
+                .and_then(|url| Value::as_str(url));
+            let sd_url = video_data
+                .get("browser_native_sd_url")
+                .and_then(|url| Value::as_str(url));
+            let image_url = video_data
+                .pointer("/preferred_thumbnail/image/uri")
+                .and_then(|url| Value::as_str(url));
+
+            let video_url = hd_url.or(sd_url);
+
+            video_url.and_then(|video_url| {
+                image_url.map(|image_url| VideoResult {
+                    result: "ok".to_string(),
+                    video_url: video_url.to_string(),
+                    thumbnail_url: image_url.to_string(),
+                })
+            })
+        } else {
+           
+            None
+        }
+    } else if let _id = is_instagram_reel_or_video_url(&video_url) {
+        None
+    } else {
+        None
     };
 
-    web::Json(result)
+    if some.is_none() {
+        println!("could not scrap {}", video_url);
+    }
+
+    match some {
+        Some(response) => web::Json(response),
+        None => web::Json(VideoResult {
+            result: "none".to_string(),
+            thumbnail_url: "".to_string(),
+            video_url: "".to_string(),
+        }),
+    }
 }

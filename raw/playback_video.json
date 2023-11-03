@@ -1,0 +1,87 @@
+{
+    "animated_image_caption": null,
+    "audio_availability": "AVAILABLE",
+    "audio_settings": null,
+    "audio_user_preferred_language": "en",
+    "autoplay_gating_result": "all_page_organic_allowed",
+    "broadcast_id": null,
+    "broadcast_low_latency_config": null,
+    "broadcast_status": null,
+    "broadcaster_origin": null,
+    "browser_native_hd_url": "https://scontent.fdel24-1.fna.fbcdn.net/v/t50.33967-16/10000000_894754018737931_6037398622824145738_n.mp4?_nc_cat=102&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjIxNDksInJsYSI6MTU4NCwidmVuY29kZV90YWciOiJhc2ljX2hxMl9oZF9wcm9ncmVzc2l2ZSJ9&_nc_ohc=JexzMmgmzCMAX_4_fhu&rl=2149&vabr=1433&_nc_ht=scontent.fdel24-1.fna&oh=00_AfBFAlgg6wyu5r0kJCDOcydBrTW0quNWkmZm5C3lFHkdug&oe=65499E85",
+    "browser_native_sd_url": "https://scontent.fdel24-1.fna.fbcdn.net/v/t50.33967-16/395013136_174947445611391_4152204066801686275_n.mp4?_nc_cat=105&ccb=1-7&_nc_sid=55d0d3&efg=eyJybHIiOjg2NCwicmxhIjo1MzAsInZlbmNvZGVfdGFnIjoiYXNpY19ocTFfc2RfcHJvZ3Jlc3NpdmUifQ%3D%3D&_nc_ohc=Hq7EQSbNRM4AX8Kvxey&rl=864&vabr=480&_nc_ht=scontent.fdel24-1.fna&oh=00_AfAq9vow1I-0l2WuI3HrmHyv1dNycGJC_Yw_wSrt83W3oQ&oe=654A4249",
+    "can_autoplay": true,
+    "can_use_oz": true,
+    "captions_settings": null,
+    "captions_url": null,
+    "cix_screen": null,
+    "comet_video_player_context_sensitive_config": "{}",
+    "comet_video_player_static_config": "{}",
+   
+    "dash_manifest_url": "https://www.facebook.com/video/playback/dash_mpd_debug.mpd?v=884367969807005&dummy=.mpd",
+    "dash_prefetch_experimental": [
+        "1475333333251378v",
+        "295140593417168a"
+    ],
+    "drm_info": "{\"video_license_uri_map\":{},\"graph_api_video_license_uri\":null,\"fairplay_cert\":null,\"widevine_cert\":\"CsECCAMSEBcFuRfMEgSGiwYzOi93KowYgrSCkgUijgIwggEKAoIBAQCZ7Vs7Mn2rXiTvw7YqlbWYUgrVvMs3UD4GRbgU2Ha430BRBEGtjOOtsRu4jE5yWl5KngeVKR1YWEAjp+GvDjipEnk5MAhhC28VjIeMfiG\\/+\\/7qd+EBnh5XgeikX0YmPRTmDoBYqGB63OBPrIRXsTeo1nzN6zNwXZg6IftO7L1KEMpHSQykfqpdQ4IY3brxyt4zkvE9b\\/tkQv0x4b9AsMYE0cS6TJUgpL+X7r1gkpr87vVbuvVk4tDnbNfFXHOggrmWEguDWe3OJHBwgmgNb2fG2CxKxfMTRJCnTuw3r0svAQxZ6ChD4lgvC2ufXbD8Xm7fZPvTCLRxG88SUAGcn1oJAgMBAAE6FGxpY2Vuc2Uud2lkZXZpbmUuY29tEoADrjRzFLWoNSl\\/JxOI+3u4y1J30kmCPN3R2jC5MzlRHrPMveoEuUS5J8EhNG79verJ1BORfm7BdqEEOEYKUDvBlSubpOTOD8S\\/wgqYCKqvS\\/zRnB3PzfV0zKwo0bQQQWz53ogEMBy9szTK\\/NDUCXhCOmQuVGE98K\\/PlspKkknYVeQrOnA+8XZ\\/apvTbWv4K+drvwy6T95Z0qvMdv62Qke4XEMfvKUiZrYZ\\/DaXlUP8qcu9u\\/r6DhpV51Wjx7zmVflkb1gquc9wqgi5efhn9joLK3\\/bNixbxOzVVdhbyqnFk8ODyFfUnaq3fkC3hR3f0kmYgI41sljnXXjqwMoW9wRzBMINk+3k6P8cbxfmJD4\\/Paj8FwmHDsRfuoI6Jj8M76H3CTsZCZKDJjM3BQQ6Kb2m+bQ0LMjfVDyxoRgvfF\\/\\/M\\/EEkPrKWyU2C3YBXpxaBquO4C8A0ujVmGEEqsxN1HX9lu6c5OMm8huDxwWFd7OHMs3avGpr7RP7DUnTikXrh6X0\"}",
+    "fbls_tier": null,
+    "height": 1920,
+    "id": "884367969807005",
+    "is_gaming_video": false,
+    "is_latency_menu_enabled": false,
+    "is_latency_sensitive_broadcast": false,
+    "is_live_streaming": false,
+    "is_live_trace_enabled": false,
+    "is_looping": false,
+    "is_ncsr": false,
+    "is_podcast_video": false,
+    "is_rss_podcast_video": false,
+    "is_spherical": false,
+    "is_spherical_enabled": true,
+    "is_video_broadcast": false,
+    "latency_sensitive_config": null,
+    "length_in_second": 58.959,
+    "live_playback_instrumentation_configs": null,
+    "loop_count": 0,
+    "min_quality_preference": "HD",
+    "muted_segments": [],
+    "p2p_settings": null,
+    "permalink_url": "https://www.facebook.com/reel/884367969807005/",
+    "pmv_metadata": null,
+    "preferred_thumbnail": {
+        "id": "301183366048544",
+        "image": {
+            "uri": "https://scontent.fdel24-1.fna.fbcdn.net/v/t51.29350-10/395705143_789011319648033_5016290835188045552_n.jpg?stp=dst-jpg_s960x960&_nc_cat=109&ccb=1-7&_nc_sid=dd673f&_nc_ohc=ujG__L76eMkAX-6MC7N&_nc_ht=scontent.fdel24-1.fna&oh=00_AfB1miU7wG-Hy0icIBVeaYXtvnxlOODZY1MWfcevnbSc4Q&oe=654A3057"
+        },
+        "image_preview_payload": "ABgquLC46Y/z+FS+U3bH6f4U0SEVLHOG6gj3xxWHMzVwSITbyN6f5/Cir4oqrsjlRkHmrCMEGD2A/M9v8apoQHBY/LTZJljm2sQd/cdBk8A1C8jZ+ZppcovDHFFUnXygVYEBzw/YA+p5+nv60VSVyW0jOSNx2P5U2eEs+Qp6DJA71qhiB1NLuPqa0SsZXuUrd52Ijct5fU7h6dsnn9aKuZO3FFO/Ym/c/9k="
+    },
+    "spherical_video_fallback_urls": null,
+    "spherical_video_renderer": null,
+    "unsupported_browser_message": null,
+    "video_available_captions_locales": [],
+    "video_imf_data": null,
+    "video_player_shaka_performance_logger_init": {
+        "__module_component_useVideoPlayerShakaPerformanceLoggerRelayImpl_video": {
+            "__dr": "VideoPlayerShakaPerformanceLogger"
+        },
+        "__module_operation_useVideoPlayerShakaPerformanceLoggerRelayImpl_video": {
+            "__dr": "useVideoPlayerShakaPerformanceLoggerRelayImpl_init$normalization.graphql"
+        },
+        "__typename": "VideoPlayerShakaPerformanceLoggerInit"
+    },
+    "video_player_shaka_performance_logger_init2": {
+        "__module_component_useVideoPlayerShakaPerformanceLoggerBuilder_video": {
+            "__dr": "VideoPlayerShakaPerformanceLoggerBuilder"
+        },
+        "__module_operation_useVideoPlayerShakaPerformanceLoggerBuilder_video": {
+            "__dr": "useVideoPlayerShakaPerformanceLoggerBuilder_init$normalization.graphql"
+        },
+        "__typename": "VideoPlayerShakaPerformanceLoggerInit",
+        "per_session_sampling_rate": null
+    },
+    "video_player_shaka_performance_logger_should_sample": false,
+    "video_status_type": "OK",
+    "viewer_autoplay_setting": "default_autoplay",
+    "warning_screen_renderer": null,
+    "width": 1080
+}

@@ -4,6 +4,27 @@ use reqwest::header::{
     DNT, ORIGIN, REFERER, USER_AGENT,
 };
 
+use regex::Regex;
+
+
+pub fn is_instagram_reel_or_video_url(url: &str) -> Option<String> {
+    // Define a regex pattern for Instagram reels or videos.
+    let reel_video_regex = Regex::new(
+        r"(?x)                                          # Enable verbose mode (comments and whitespace).
+        https?://(www\.)?instagram\.com/               # Match the beginning of an Instagram URL.
+        (?:p|tv|reel)/                                 # Match 'p', 'tv', or 'reel' indicating the type of content.
+        ([\w-]+)/?                                     # Capture the unique identifier for the reel or video.
+        "
+    ).unwrap();
+
+    // Check if the pattern matches and extract the unique identifier.
+    reel_video_regex.captures(url).and_then(|caps| {
+        caps.get(2).map(|m| m.as_str().to_string())
+    })
+}
+
+
+
 pub async fn fetch_instagram_video(url: &str) -> Result<String, Box<dyn std::error::Error>> {
     let client = reqwest::Client::new();
     let mut headers = HeaderMap::new();

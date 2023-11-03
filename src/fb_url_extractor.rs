@@ -5,6 +5,51 @@ use serde_json::Map;
 use serde_json::{Result as SerdeResult, Value};
 use url::Url;
 
+pub fn is_facebook_video_or_reel_url(url: &str) -> Option<String> {
+    // Define a regex pattern that matches Facebook video or reel URLs.
+    let fb_regex = Regex::new(
+        r"(?x)                                    # Enable verbose mode for this regex.
+        https?://(?:www\.|web\.|m\.)?facebook\.com/ # Match the start of a Facebook domain.
+        (?:                                       # Start non-capturing group for the different URL types.
+            watch/\?v=                            # Match 'watch' URLs.
+            |                                    # OR
+            reel/                                # Match 'reel' URLs.
+            |                                    # OR
+            .*videos.*vb\.\d+/                   # Match any characters followed by 'videos' and 'vb.<number>/'.
+        )                                         # End non-capturing group.
+        (?P<id>[0-9]+)                           # Capture the numeric ID named 'id'.
+        |                                        # OR
+        https?://fb\.watch/(?P<shortcode>[A-Za-z0-9_\-]+)/ # Match 'fb.watch' short URLs and capture the shortcode.
+        "
+    ).unwrap();
+
+    // Attempt to find a match and extract the video or reel ID.
+    fb_regex.captures(url).and_then(|caps| {
+        caps.name("id")
+            .or_else(|| caps.name("shortcode"))
+            .map(|m| m.as_str().to_string())
+    })
+}
+
+pub async fn scrap_facebook_video(url: &str, id: &str) -> Option<Value> {
+    let fetched_html = fetch_fb_html(url).await.ok()?;
+    let video_id = id.to_string();
+
+    // println!("fb_html from {} \n {}", url, fetched_html);
+
+    extract_json_from_fb_doc(&fetched_html).into_iter().find_map(|json|{
+        match find_json(&json, "video") {
+            Some(Value::Object(map)) if map.get("id") == Some(&Value::String(video_id.clone())) => {
+                map.get("creation_story")
+                .and_then(|cs| cs.get("short_form_video_context"))
+                .and_then(|vc| vc.get("playback_video"))
+                .cloned()
+            }
+            _ => None
+        }
+    })
+}
+
 /**a
  * Find all Url from facebook video urls
  */
@@ -81,7 +126,9 @@ pub async fn fetch_fb_html(url: &str) -> Result<String, Box<dyn std::error::Erro
     headers.insert("Dpr", HeaderValue::from_static("1"));
     headers.insert("Cache-Control", HeaderValue::from_static("max-age=0"));
 
-    let response = client.get(url).headers(headers).send().await?;
+    let response = client.get(url).headers(headers).send().await;
+    println!("fb_request respone {:?}", response);
+    let response = response?;
 
     // Handle decompression based on the content-encoding
     let res_headers = response.headers().clone();
