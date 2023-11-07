@@ -1,12 +1,4 @@
-use std::result;
-
-use crate::{
-    fb_url_extractor::{
-        extract_json_from_fb_doc, fetch_fb_html, find_json, is_facebook_video_or_reel_url,
-        scrap_facebook_video,
-    },
-    instagram::is_instagram_reel_or_video_url,
-};
+use crate::fb_url_extractor::get_fb_video_data;
 use actix_web::{get, web, HttpResponse, Responder};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
@@ -29,23 +21,20 @@ pub async fn hello() -> impl Responder {
     HttpResponse::Ok().body("Hello, world!")
 }
 
+
 #[get("/get-video-data")]
 pub async fn get_video_data(info: web::Json<Info>) -> impl Responder {
     let video_url = info.video_url.to_owned();
 
-    let some: Option<VideoResult> = if let Some(id) = is_facebook_video_or_reel_url(&video_url) {
-        // println!("given url {} is facebook url with id {}", &video_url, &id);
-
-        if let Some(video_data) = scrap_facebook_video(&video_url, &id).await {
-            println!("{:?}", serde_json::to_string_pretty(&video_data));
-
-            let hd_url = video_data
+    let video_data = if is_facebook_url(&video_url) {
+        get_fb_video_data(&video_url).await.and_then(|data| {
+            let hd_url = data
                 .get("browser_native_hd_url")
                 .and_then(|url| Value::as_str(url));
-            let sd_url = video_data
+            let sd_url = data
                 .get("browser_native_sd_url")
                 .and_then(|url| Value::as_str(url));
-            let image_url = video_data
+            let image_url = data
                 .pointer("/preferred_thumbnail/image/uri")
                 .and_then(|url| Value::as_str(url));
 
@@ -58,26 +47,30 @@ pub async fn get_video_data(info: web::Json<Info>) -> impl Responder {
                     thumbnail_url: image_url.to_string(),
                 })
             })
-        } else {
-           
-            None
-        }
-    } else if let _id = is_instagram_reel_or_video_url(&video_url) {
-        None
+        })
     } else {
         None
     };
 
-    if some.is_none() {
-        println!("could not scrap {}", video_url);
-    }
-
-    match some {
+    match video_data {
         Some(response) => web::Json(response),
         None => web::Json(VideoResult {
             result: "none".to_string(),
             thumbnail_url: "".to_string(),
             video_url: "".to_string(),
         }),
+    }
+}
+
+fn is_facebook_url(url: &str) -> bool {
+    match url::Url::parse(url) {
+        Ok(url) => {
+            if let Some(host) = url.host_str() {
+                host.ends_with("facebook.com")
+            } else {
+                false
+            }
+        }
+        Err(_) => false,
     }
 }

@@ -5,6 +5,55 @@ use serde_json::Map;
 use serde_json::{Result as SerdeResult, Value};
 use url::Url;
 
+pub async fn get_fb_video_data(url: &str) -> Option<Value> {
+    // download html content
+    let html_content = fetch_fb_html(url).await.ok()?;
+
+    // extract all json data from the downloaded content
+    extract_json_from_fb_doc(&html_content)
+        .into_iter()
+        .find_map(|json_str| {
+            serde_json::from_str(&json_str)
+                .ok()
+                .and_then(|json: Value| {
+                    search_into_json(&json, "result")
+                        .into_iter()
+                        .find_map(|result_tok| {
+                            result_tok
+                            .pointer("/data/video/creation_story/short_form_video_context/playback_video")
+                            .or_else(|| result_tok.pointer("/data/video"))
+                            .or_else(|| result_tok.pointer("/data/video/story/attachments/0/media"))
+                            .cloned()
+                        })
+                })
+        })
+}
+
+fn search_into_json(json_obj: &Value, key: &str) -> Vec<Value> {
+    let mut results = Vec::new();
+
+    match json_obj {
+        Value::Object(obj) => {
+            for (tok, map) in obj {
+                if tok == key {
+                    results.push(map.clone());
+                    break;
+                }
+
+                results.extend(search_into_json(map, key))
+            }
+        }
+        Value::Array(arr) => {
+            for v in arr {
+                results.extend(search_into_json(v, key))
+            }
+        }
+        _ => {}
+    }
+
+    results
+}
+
 pub fn is_facebook_video_or_reel_url(url: &str) -> Option<String> {
     // Define a regex pattern that matches Facebook video or reel URLs.
     let fb_regex = Regex::new(
@@ -32,22 +81,35 @@ pub fn is_facebook_video_or_reel_url(url: &str) -> Option<String> {
 }
 
 pub async fn scrap_facebook_video(url: &str, id: &str) -> Option<Value> {
+    // download the html code
     let fetched_html = fetch_fb_html(url).await.ok()?;
+
     let video_id = id.to_string();
 
     // println!("fb_html from {} \n {}", url, fetched_html);
 
-    extract_json_from_fb_doc(&fetched_html).into_iter().find_map(|json|{
-        match find_json(&json, "video") {
-            Some(Value::Object(map)) if map.get("id") == Some(&Value::String(video_id.clone())) => {
-                map.get("creation_story")
-                .and_then(|cs| cs.get("short_form_video_context"))
-                .and_then(|vc| vc.get("playback_video"))
-                .cloned()
+    let mut count = 0;
+
+    extract_json_from_fb_doc(&fetched_html)
+        .into_iter()
+        .find_map(|json| {
+            count += 1;
+            match find_json(&json, "video") {
+                Some(Value::Object(map))
+                    if map.get("id") == Some(&Value::String(video_id.clone())) =>
+                {
+                    map.get("creation_story")
+                        .and_then(|cs| cs.get("short_form_video_context"))
+                        .and_then(|vc| vc.get("playback_video"))
+                        .cloned()
+                }
+                _ => None,
             }
-            _ => None
-        }
-    })
+        })
+        .and_then(|value| {
+            println!("script count {}", count);
+            Some(value)
+        })
 }
 
 /**a
@@ -126,9 +188,7 @@ pub async fn fetch_fb_html(url: &str) -> Result<String, Box<dyn std::error::Erro
     headers.insert("Dpr", HeaderValue::from_static("1"));
     headers.insert("Cache-Control", HeaderValue::from_static("max-age=0"));
 
-    let response = client.get(url).headers(headers).send().await;
-    println!("fb_request respone {:?}", response);
-    let response = response?;
+    let response = client.get(url).headers(headers).send().await?;
 
     // Handle decompression based on the content-encoding
     let res_headers = response.headers().clone();
@@ -273,3 +333,5 @@ fn parse_json(json: &Value, urls: &mut Vec<String>) {
 fn is_valid_url(s: &str) -> bool {
     s.parse::<Url>().is_ok()
 }
+
+

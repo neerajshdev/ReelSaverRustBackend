@@ -8,7 +8,7 @@
 # Create a stage for building the application.
 
 ARG RUST_VERSION=1.73.0
-ARG APP_NAME=api
+ARG APP_NAME=vd-api
 FROM rust:${RUST_VERSION}-slim-bullseye AS build
 ARG APP_NAME
 WORKDIR /app

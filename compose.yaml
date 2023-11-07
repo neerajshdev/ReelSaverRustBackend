@@ -9,8 +9,8 @@
 # https://github.com/docker/awesome-compose
 services:
   server:
-    image: get-social-server
-    container_name: get-social-server
+    image: vd-api
+    container_name: vd-api 
     build:
       context: .
       target: final
