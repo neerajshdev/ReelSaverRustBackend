@@ -21,8 +21,8 @@ pub async fn get_fb_video_data(url: &str) -> Option<Value> {
                         .find_map(|result_tok| {
                             result_tok
                             .pointer("/data/video/creation_story/short_form_video_context/playback_video")
-                            .or_else(|| result_tok.pointer("/data/video"))
                             .or_else(|| result_tok.pointer("/data/video/story/attachments/0/media"))
+                            .or_else(|| result_tok.pointer("/data/video"))
                             .cloned()
                         })
                 })
